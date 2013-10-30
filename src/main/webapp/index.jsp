@@ -6,15 +6,14 @@
 <c:set value="user" var="user"/>
 <html>
 <body>
-<h2>Hello ${pageContext.request.userPrincipal.name} <c:out value="${user.name}" /></h2>
-<%= user.getName() %>
-<h3>Attributes:</h3>
-<p>
-<c:forEach var="attribute" items="${user.attributes}">
-<c:out value="${attribute.key}"/>
-<c:out value="${attribute.value}"/>
-<br/>
-</c:forEach>
-<p>
+<h2>Hello <%= user.getName() %></h2>
+<h3>Attributes</h3>
+<table style="border: none">
+<% for(String key : user.getAttributes().keySet()) { %>
+<tr>
+<td><%= key %></td><td><%= user.getAttributes().get(key) %></td>
+</tr>
+<% } %>
+</table>
 </body>
 </html>
