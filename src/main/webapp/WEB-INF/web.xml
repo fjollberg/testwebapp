@@ -13,7 +13,8 @@
       </init-param>
       <init-param>
         <param-name>serverName</param-name>
-        <param-value>https://localhost:8443</param-value>
+<!--        <param-value>https://lpw-dev-1-r.referens.sys.kth.se</param-value>-->
+        <param-value>https://fjo.ite.kth.se:28443</param-value>
       </init-param>
     </filter>
 
@@ -25,8 +26,9 @@
 	    <param-value>https://fjo.ite.kth.se:28443/login</param-value>
 	  </init-param>
 	  <init-param>
-	    <param-name>serverName</param-name>
-	    <param-value>https://localhost:8443</param-value>
+        <param-name>serverName</param-name>
+<!--        <param-value>https://lpw-dev-1-r.referens.sys.kth.se</param-value>-->
+            <param-value>https://fjo.ite.kth.se:28443</param-value>
 	  </init-param>
     </filter>
 
